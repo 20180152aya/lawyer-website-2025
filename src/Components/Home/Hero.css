@@ -1,0 +1,271 @@
+.button {
+    background-color: #B40000;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #ffc107;
+    color: #000;
+    transform: scale(1.05);
+}
+
+
+
+
+.hero {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    color: #ffffff;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* غامق أكتر */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(60, 0, 0, 0.7) 40%,
+            rgba(62, 0, 0, 0.7) 41%,
+            rgba(48, 0, 0, 0.6) 48%,
+            rgba(47, 0, 0, 0.6) 49%,
+            rgba(41, 0, 0, 0.5) 51%,
+            rgba(41, 0, 0, 0.5) 52%,
+            rgba(40, 0, 0, 0.45) 53%,
+            rgba(37, 0, 0, 0.4) 54%,
+            rgba(33, 0, 0, 0.35) 55%,
+            rgba(32, 0, 0, 0.3) 56%,
+            rgba(28, 0, 0, 0.28) 57%,
+            rgba(29, 0, 0, 0.25) 58%,
+            rgba(27, 0, 0, 0.22) 59%,
+            rgba(26, 0, 0, 0.2) 60%,
+            rgba(22, 0, 0, 0.15) 61%,
+            rgba(20, 0, 0, 0.12) 62%,
+            rgba(22, 0, 0, 0.1) 63%,
+            rgba(17, 0, 0, 0.08) 64%,
+            rgba(14, 0, 0, 0.05) 65%,
+            rgba(16, 0, 0, 0.04) 66%,
+            rgba(9, 0, 0, 0.02) 67%,
+            rgba(0, 0, 0, 0.01) 69%,
+            rgba(18, 0, 0, 0.01) 70%,
+            rgba(0, 0, 0, 0) 71%,
+            rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    animation: slideUp 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    background-color: #fff8f8;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.about-image {
+    position: relative;
+    flex: 0 0 400px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about-image img {
+    width: 100%;
+    border: 8px solid #b40000c9;
+    border-radius: 25px 5px 25px 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    border-color: #FF5C5C;
+}
+
+.experience-box {
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    background: rgb(180, 0, 0);
+    color: #fff;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 120px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.about-image:hover .experience-box {
+    transform: translateY(-10px);
+    bottom: -50px;
+}
+
+.experience-box .years {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.experience-box .text {
+    font-size: 14px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: right;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2e0000;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-text .extra-text {
+    color: #555;
+}
+
+.about-text .signature {
+    font-style: italic;
+    margin-top: 20px;
+    color: #2e0000;
+    font-size: 18px;
+}
+
+.ser_container {
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.ser_container h2 {
+    margin: 20px 0;
+    font-size: 40px;
+    color: #2e0000;
+}
+
+.ser_container p {
+    margin: 20px 0;
+}
+
+.row {
+    margin-top: 80px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+  
+}
+
+.service-icon-wrapper {
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+ 
+}
+
+.service-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.service-card:hover .service-icon {
+    transform: translateY(-10px);
+}
+
+.ser_container .button {
+    margin-bottom: 30px;
+}
+
+
+.why-choose-us h2 {
+    font-weight: 700;
+    color: #2e0000;
+}
+
+.why-choose-us p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.why-choose-us {
+    margin-top: 50px;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.why-choose-us .button {
+    margin: 20px 0;
+}

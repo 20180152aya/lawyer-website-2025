@@ -1,0 +1,16 @@
+.about-page h1 {
+  color: #2e0000;
+}
+
+.about-page h3 {
+  color: #2e0000;
+}
+
+.about-page img {
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.about-page img:hover {
+  transform: scale(1.03);
+}
