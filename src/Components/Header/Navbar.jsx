@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 function Navs() {
   const navigate = useNavigate();
   return (
-    <Navbar bg="light" expand="lg" className="navBar shadow-sm py-3">
+    <Navbar bg="light" expand="lg" className="navBar shadow-sm p-1">
       <Container>
         <Navbar.Brand as={Link} to="/" className="me-3">
           <img
