@@ -72,18 +72,3 @@
   background-color: #600000 !important;
   transform: scale(1.05);
 }
-@media (max-width: 991px) {
-  .nav-links .nav-link {
-    font-size: 14px !important; 
-  }
-
-  .appointment-btn {
-    padding: 6px 15px !important; 
-    font-size: 14px; 
-    border-radius: 25px;
-  }
-
-  .logo-img {
-    width: 70px; 
-  }
-}
