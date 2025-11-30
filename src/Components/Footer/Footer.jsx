@@ -5,10 +5,7 @@ import "../../App.css";
 import { Container } from "react-bootstrap";
 import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
@@ -43,18 +40,18 @@ function Footer() {
           </li>
         </ul>
 
-        <div className="footer-contact-social d-flex justify-content-between align-items-center flex-wrap mb-3">
+        <div className="footer-contact-social">
           <div className="contact-info" data-aos="fade-right">
             <span className="p-2">
               اتصل بنا:{" "}
               <a className="text-white" href="tel:01273805398">
                 01142677273 - 01014547030
               </a>
-            </span>{" "}
-            |
+            </span>
+            <span className="mx-2">|</span>
             <span>
               الايميل:{" "}
-              <a className="text-white" href="mailto:info@example.com">
+              <a className="text-white" href="mailto:gamalbasma14@gmail.com">
                 gamalbasma14@gmail.com
               </a>
             </span>
@@ -69,7 +66,11 @@ function Footer() {
             </a>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="200">
+          <div
+            className="contact-btn"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <button className="button" onClick={() => navigate("/contact")}>
               حجز موعد
             </button>

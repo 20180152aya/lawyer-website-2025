@@ -38,24 +38,45 @@
     color: #ffb400;
 }
 
-.footer-modern .footer-contact-social {
-    color: #ccc;
-    font-size: 0.9rem;
+.footer-contact-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    margin-top: 20px;
-    padding: 20px 0;
+    text-align: right;
 }
 
-.footer-modern .social-icons a {
-    color: #ccc;
-    margin-left: 10px;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+.contact-info a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.footer-modern .social-icons a:hover {
-    color: #ffb400;
+.social-icons a .font {
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
 }
 
+.social-icons a .font:hover {
+    color: #ffcc00;
+}
+
+.contact-btn .button {
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-contact-social {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+}
