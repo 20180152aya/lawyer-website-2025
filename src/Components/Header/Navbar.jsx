@@ -29,16 +29,16 @@ function Navs() {
 
           <Nav className="mx-auto nav-links gap-4">
 
-            <Nav.Link as={Link} to="/">الرئيسية</Nav.Link>
+            <Nav.Link className="link" as={Link} to="/">الرئيسية</Nav.Link>
 
-            <Nav.Link as={Link} to="/about">من أنا</Nav.Link>
+            <Nav.Link className="link" as={Link} to="/about">من أنا</Nav.Link>
 
  
-            <Nav.Link as={Link} to="/services">الخدمات القانونية</Nav.Link>
+            <Nav.Link className="link" as={Link} to="/services">الخدمات القانونية</Nav.Link>
 
-            <Nav.Link as={Link} to="/blog">المدونة القانونية</Nav.Link>
+            <Nav.Link className="link" as={Link} to="/blog">المدونة القانونية</Nav.Link>
 
-            <Nav.Link as={Link} to="/contact">تواصل معي</Nav.Link>
+            <Nav.Link className="link" as={Link} to="/contact">تواصل معي</Nav.Link>
 
           </Nav>
           <Button className="appointment-btn" onClick={()=>navigate("/contact")}>

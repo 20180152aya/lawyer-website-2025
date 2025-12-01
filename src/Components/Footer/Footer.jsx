@@ -48,7 +48,7 @@ function Footer() {
                 01142677273 - 01014547030
               </a>
             </span>
-            <span className="mx-2">|</span>
+            <span className="mx-2 space">|</span>
             <span>
               الايميل:{" "}
               <a className="text-white" href="mailto:gamalbasma14@gmail.com">

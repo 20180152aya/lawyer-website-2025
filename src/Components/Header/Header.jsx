@@ -3,17 +3,14 @@ import "./Header.css";
 import "../../App.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function Header() {
   return (
     <>
       <header className="header flexSB">
         <div className="info flexSB">
           <p> العنوان:عمارة 42/1 الشطر الثامن زهراء المعادي القاهره</p>
-          <p>|</p>
+          <p className="space">|</p>
           <p>الايميل: gamalbasma14@gmail.com</p>
           <p>
             <a
@@ -38,10 +35,9 @@ function Header() {
         </div>
         <div className="icons">
           <a href="https://www.facebook.com/share/16WXVdaymz/" target="_blank">
-            <FontAwesomeIcon icon={faFacebook} className="font" />
+            يمكنك متابعتنا على صفحتنا
+            <FontAwesomeIcon icon={faFacebook} className="font face" />
           </a>
-
-
         </div>
       </header>
     </>

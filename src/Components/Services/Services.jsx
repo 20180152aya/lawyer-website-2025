@@ -15,6 +15,8 @@ import labor from "../../assets/العمال.jpeg";
 import civil from "../../assets/مدنى.jpeg";
 import companyConsult from "../../assets/العقارات.jpeg";
 import letters from "../../assets/كتابة.jpeg";
+import money from "../../assets/اموال.jpeg";
+import forien from "../../assets/نقد.jpeg";
 import Header from "../Header/Header";
 import Navs from "../Header/Navbar";
 import MiniHero from "../MinHero/MiniHero";
@@ -87,13 +89,23 @@ function ServiceSection() {
       title: "صياغة المراسلات القانونية",
       text: "كتابة كافة المراسلات القانونية والاتفاقيات الرسمية بما يتوافق مع القانون.",
     },
+    {
+      icon: money,
+      title: "قضايا الأموال العامة",
+      text: "الترافع والدفاع في قضايا الأموال العامة، ومتابعة التحقيقات والإجراءات القانونية لحماية الحقوق وصون المال العام.",
+    },
+    {
+      icon: forien,
+      title: "النقد الاجنبي",
+      text: "التعامل مع القضايا المتعلقة بمخالفات النقد الأجنبي، وتقديم الاستشارات القانونية المتعلقة بالتحويلات المالية والمعاملات البنكية.",
+    },
   ];
 
   return (
     <>
       <Header />
       <Navs />
-           <MiniHero
+      <MiniHero
         title="الخدمات القانونية"
         subtitle="مكتب العدل للمحاماة والاستشارات القانونية"
       />
@@ -114,7 +126,11 @@ function ServiceSection() {
         </div>
 
         <div className="text-center mt-4">
-          <Button className="button" data-aos="zoom-in" onClick={()=>navigate('/contact')}>
+          <Button
+            className="button"
+            data-aos="zoom-in"
+            onClick={() => navigate("/contact")}
+          >
             تواصل معنا لحجز الخدمة
           </Button>
         </div>

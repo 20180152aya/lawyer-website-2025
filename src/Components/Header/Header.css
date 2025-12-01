@@ -33,6 +33,7 @@
 .phone {
   padding: 0 10px;
 }
+/* end headers */
 
 .navBar {
   position: sticky;
@@ -43,7 +44,8 @@
   padding: 0;
 }
 .logo-img {
-  width: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid #2e0000;
 }
@@ -71,4 +73,56 @@
 .appointment-btn:hover {
   background-color: #600000 !important;
   transform: scale(1.05);
+}
+.header .face{
+  padding: 0 10px;
+}
+.header a{
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .header{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .header .space{
+    display: none;
+  }
+  .nav-links .nav-link{
+    padding: 10px;
+    text-align: center;
+    
+  }
+.navBar .link {
+  position: relative;
+  display: inline-block;
+}
+
+.navBar .link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #600000;
+  transition: width 0.3s ease;
+}
+
+.navBar .link:hover::after {
+  width: 50%; 
+}
+  .navBar .justify-content-between{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navBar .appointment-btn{
+    margin: 20px auto;
+     
+  }
 }

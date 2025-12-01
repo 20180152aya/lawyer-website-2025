@@ -33,8 +33,57 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+  .about-page{
+    overflow: hidden;
+  }
+
+  .about-page h1,
+  .about-page h2,
+  .about-page h3 {
+    font-size: 1.6rem !important;
+  }
+
+  .about-page p,
+  .about-page .lead {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+
   .about-page img {
-    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+  .about-page .card {
+    padding: 15px;
+  }
+
+  .about-page h4 {
+
+    font-size: 2rem !important;
+  }
+
+  .about-page .stats p {
+    font-size: 1rem;
+  }
+
+  /* تقليل المسافات */
+  .about-page .row {
+    margin-bottom: 2rem !important;
+  }
+
+  .about-page .text-center {
+    margin-bottom: 1rem;
+  }
+  .about-page h3{
+    text-align: center;
+  }
+  .about-page .lead{
+    text-align: center;
   }
 }
+

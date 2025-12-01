@@ -79,7 +79,7 @@ export default function About() {
           </Col>
         </Row>
 
-        <Row className="align-items-center mb-5">
+        <Row className=" align-items-center mb-5">
           <Col md={6} data-aos="fade-right">
             <img
               src={img2}
@@ -161,7 +161,7 @@ export default function About() {
 
         <Row className="text-center mt-5 g-4">
           <Col md={4} data-aos="fade-up">
-            <h4 className="text-4xl fw-bold text-[#2e0000]">+10</h4>
+            <h4 className="text-4xl fw-bold text-[#2e0000]">+16</h4>
             <p className="lead">سنوات خبرة</p>
           </Col>
           <Col md={4} data-aos="fade-up" data-aos-delay="100">

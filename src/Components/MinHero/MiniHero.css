@@ -26,14 +26,17 @@
   padding: 0 20px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .mini-hero {
     height: 180px;
+    overflow: hidden;
+    width: 100%;
   }
+
   .mini-hero-content h2 {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
   .mini-hero-content p {
-    font-size: 0.9rem;
+    font-size: 22px;
   }
 }
