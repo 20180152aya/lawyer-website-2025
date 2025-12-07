@@ -15,7 +15,7 @@ function AboutSection() {
         <div className="col-md-6 about-image mb-4 mb-md-0" data-aos="fade-right">
           <img src={lawyerImage} alt="المحامية بسمة جمال" className="img-fluid rounded shadow" />
           <div className="experience-box mt-3 text-center">
-            <span className="years fw-bold fs-3">10</span>
+            <span className="years fw-bold fs-3">16</span>
             <span className="text d-block">سنوات خبرة</span>
           </div>
         </div>
