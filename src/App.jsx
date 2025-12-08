@@ -2,10 +2,7 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Navs from "./Components/Header/Navbar";
-import AboutSection from "./Components/Home/About";
-import Hero from "./Components/Home/Hero";
-import ServiceSection from "./Components/Home/Services";
-import WhyChooseUs from "./Components/Home/WhyChhose";
+import HomePage from "./Components/Home/Home";
 
 function App() {
 
@@ -13,10 +10,7 @@ function App() {
     <>
       <Header />
       <Navs />
-      <Hero />
-      <AboutSection />
-      <ServiceSection />
-      <WhyChooseUs />
+      <HomePage />
       <Footer />
     </>
   );

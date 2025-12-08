@@ -7,6 +7,7 @@ import Header from "../Header/Header";
 import Navs from "../Header/Navbar";
 import MiniHero from "../MinHero/MiniHero";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
   useEffect(() => {
@@ -60,6 +61,18 @@ export default function Blog() {
 
   return (
     <>
+      <Helmet>
+        <title>مكتب بسمة جمال للمحاماة |  المدونة القانونية</title>
+        <meta
+          name="description"
+          content="مكتب العدل للمحاماة والاستشارات القانونية بإدارة المحامية بسمة جمال. خبرة في القضايا الجنائية، المدني، التجاري، الأحوال الشخصية، قضايا الأموال العامة، والنقد الأجنبي، وتأسيس الشركات. اتصل بنا الآن للحصول على استشارة قانونية موثوقة."
+        />
+
+        <meta
+          name="keywords"
+          content="المحامية بسمة جمال, مكتب محاماة, محامي جنائي, محامي أحوال شخصية, قضايا أموال عامة, قضايا النقد الأجنبي, محامي مدني, محامي تجاري, تأسيس شركات, استشارات قانونية, أفضل محامي في القاهرة, محامي في الجيزة"
+        />
+      </Helmet>
       <Header />
       <Navs />
       <MiniHero

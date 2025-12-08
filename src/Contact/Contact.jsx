@@ -8,6 +8,7 @@ import MiniHero from "../Components/MinHero/MiniHero";
 import Footer from "../Components/Footer/Footer";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   const form = useRef();
@@ -17,7 +18,7 @@ function Contact() {
 
     emailjs
       .sendForm(
-       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID ,
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         form.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -42,6 +43,18 @@ function Contact() {
 
   return (
     <>
+      <Helmet>
+        <title> مكتب بسمة جمال للمحاماة | تواصل معنا </title>
+        <meta
+          name="description"
+          content="مكتب العدل للمحاماة والاستشارات القانونية بإدارة المحامية بسمة جمال. خبرة في القضايا الجنائية، المدني، التجاري، الأحوال الشخصية، قضايا الأموال العامة، والنقد الأجنبي، وتأسيس الشركات. اتصل بنا الآن للحصول على استشارة قانونية موثوقة."
+        />
+
+        <meta
+          name="keywords"
+          content="المحامية بسمة جمال, مكتب محاماة, محامي جنائي, محامي أحوال شخصية, قضايا أموال عامة, قضايا النقد الأجنبي, محامي مدني, محامي تجاري, تأسيس شركات, استشارات قانونية, أفضل محامي في القاهرة, محامي في الجيزة"
+        />
+      </Helmet>
       {msg.text && (
         <div className={`toast-msg ${msg.text ? "show" : ""}`}>{msg.text}</div>
       )}

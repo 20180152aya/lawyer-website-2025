@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://basmajamal-law.com/sitemap.xml
