@@ -48,8 +48,8 @@ function Hero() {
     >
       <div className="hero-content">
         <h1>{texts[index].line1}</h1>
-        <h1>{texts[index].line2}</h1>
-        <h1>{texts[index].line3}</h1>
+        <h2>{texts[index].line2}</h2>
+        <h3>{texts[index].line3}</h3>
 
         <Button className="button" onClick={() => navigate("/contact")}>
           احجز استشارة الآن
