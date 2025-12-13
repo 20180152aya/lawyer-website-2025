@@ -27,7 +27,7 @@ function Contact() {
         () => {
           setMsg({ text: "تم إرسال الرسالة بنجاح!", type: "success" });
           form.current.reset();
-          setTimeout(() => setMsg({ text: "", type: "" }), 4000); // تختفي بعد 4 ثواني
+          setTimeout(() => setMsg({ text: "", type: "" }), 4000); 
         },
         (error) => {
           setMsg({ text: "فشل الإرسال، حاول مرة أخرى.", type: "danger" });
